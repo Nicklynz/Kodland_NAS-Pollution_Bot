@@ -36,9 +36,10 @@ async def mitos(ctx):
     await ctx.send(f'Mitos : {myth}')
 
 @bot.command()
-async def something(ctx):
-    test = 0
-
-    
+async def help(ctx):
+    await ctx.send('''
+                   /help - Menampilkan berbagai macam fungsi dan gunanya\n
+                   /fakta - Menampilkan fakta tentang polusi\n
+                   /mitos - Menampilkan mitos tentang polusi''')
 
 bot.run("TOKEN")
